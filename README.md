@@ -1,3 +1,3 @@
-# .PythonChanllenge
-Learning with ThePythonChanlleng
+# .PythonChallenge
+Learning with ThePythonChalleng
 <br>UPDATING..................
