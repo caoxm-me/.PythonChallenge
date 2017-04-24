@@ -1,8 +1,8 @@
 #! /usr/bin/python
 from urllib import request
 import re
-#import string
-url_var=""
+import string
+url_var="?nothing=72387"
 while 1:
     url="http://www.pythonchallenge.com/pc/def/linkedlist.php"+url_var
     print(url)
@@ -10,7 +10,7 @@ while 1:
     response=request.urlopen(a_request)
     content=response.read().decode()
     print(content)
-    pattern=re.compile('[\D]([\d]{4,})')
+    pattern=re.compile('[\D]([\d]{3,})')
     match=pattern.findall(content)
     if match:
         url_var="?nothing="+str(match[0])
